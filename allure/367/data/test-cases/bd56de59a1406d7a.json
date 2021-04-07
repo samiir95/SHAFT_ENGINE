@@ -1,0 +1,290 @@
+{
+  "uid" : "bd56de59a1406d7a",
+  "name" : "assertComparativeRelation_greaterThanOrEquals_false_equals_expectedToPass",
+  "fullName" : "unitTests.tests_validations_assertions.assertComparativeRelation_greaterThanOrEquals_false_equals_expectedToPass",
+  "historyId" : "a861b2f90300876d9b9281725e416280",
+  "time" : {
+    "start" : 1617777273075,
+    "stop" : 1617777273076,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Action [7]: AssertComparativeRelation PASSED; Expected [2] and Actual [1]. Comparison Type [GREATER_THAN_OR_EQUALS]. Validation Type [NEGATIVE].",
+      "time" : {
+        "start" : 1617777273075,
+        "stop" : 1617777273075,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actionCounter",
+        "value" : "7"
+      }, {
+        "name" : "logText",
+        "value" : "AssertComparativeRelation PASSED; Expected [2] and Actual [1]. Comparison Type [GREATER_THAN_OR_EQUALS]. Validation Type [NEGATIVE]."
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "2d5439f33ef773b0",
+      "name" : "Attachment: SHAFT Engine Logs - Current Method log: assertComparativeRelation_greaterThanOrEquals_false_equals_expectedToPass",
+      "source" : "2d5439f33ef773b0.txt",
+      "type" : "text/plain",
+      "size" : 664
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "closureActivities",
+    "time" : {
+      "start" : 1617778194774,
+      "stop" : 1617778194774,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "broken",
+    "statusMessage" : "class com.sun.proxy.$Proxy24 cannot be cast to class org.openqa.selenium.remote.RemoteWebDriver (com.sun.proxy.$Proxy24 and org.openqa.selenium.remote.RemoteWebDriver are in unnamed module of loader 'app')",
+    "statusTrace" : "java.lang.ClassCastException: class com.sun.proxy.$Proxy24 cannot be cast to class org.openqa.selenium.remote.RemoteWebDriver (com.sun.proxy.$Proxy24 and org.openqa.selenium.remote.RemoteWebDriver are in unnamed module of loader 'app')\n\tat com.shaft.gui.browser.BrowserFactory.closeAllDrivers(BrowserFactory.java:155)\n\tat com.shaft.tools.io.LogsHelper.attachBrowserLogs(LogsHelper.java:32)\n\tat com.shaft.tools.io.LogsHelper.closureActivities(LogsHelper.java:15)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)\n\tat org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)\n\tat org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:344)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\n\tat org.testng.TestNG.run(TestNG.java:1031)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)\n\tat org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "unitTests.tests_validations_assertions"
+  }, {
+    "name" : "testClass",
+    "value" : "unitTests.tests_validations_assertions"
+  }, {
+    "name" : "testMethod",
+    "value" : "assertComparativeRelation_greaterThanOrEquals_false_equals_expectedToPass"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SHAFT_Engine: Custom Suite"
+  }, {
+    "name" : "suite",
+    "value" : "SHAFT_Engine: Custom Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "unitTests.tests_validations_assertions"
+  }, {
+    "name" : "host",
+    "value" : "fv-az266-944"
+  }, {
+    "name" : "thread",
+    "value" : "4234@fv-az266-944.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 19,
+        "unknown" : 0,
+        "total" : 19
+      },
+      "items" : [ {
+        "uid" : "667c297bb495b5e5",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/365//#testresult/667c297bb495b5e5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617758829099,
+          "stop" : 1617758829100,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "1955810eb1881c98",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/364//#testresult/1955810eb1881c98",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617730621555,
+          "stop" : 1617730621556,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "9a0b0b73e93ec972",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/363//#testresult/9a0b0b73e93ec972",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617730074832,
+          "stop" : 1617730074834,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "d82e1029dca7f7b7",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/360//#testresult/d82e1029dca7f7b7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617672440117,
+          "stop" : 1617672440118,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "52ee7d34443a8c0a",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/359//#testresult/52ee7d34443a8c0a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617586040903,
+          "stop" : 1617586040904,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "d0c1719b15d9eb8",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/358//#testresult/d0c1719b15d9eb8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617499639356,
+          "stop" : 1617499639357,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "84b5dd05340b0b7b",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/357//#testresult/84b5dd05340b0b7b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617413159423,
+          "stop" : 1617413159424,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "9a30f582a3654662",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/356//#testresult/9a30f582a3654662",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617347652492,
+          "stop" : 1617347652494,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "1df3a027db8d3b1",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/354//#testresult/1df3a027db8d3b1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617326938547,
+          "stop" : 1617326938548,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "d5983be3f659214d",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/353//#testresult/d5983be3f659214d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617262953275,
+          "stop" : 1617262953276,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "d95dee7605775b11",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/351//#testresult/d95dee7605775b11",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617240634278,
+          "stop" : 1617240634279,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "779059d185cebee9",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/350//#testresult/779059d185cebee9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617154108834,
+          "stop" : 1617154108836,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "c8e2bcd7c844cf3f",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/349//#testresult/c8e2bcd7c844cf3f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617098942124,
+          "stop" : 1617098942125,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "f7f5c304c13a9bb5",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/348//#testresult/f7f5c304c13a9bb5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617091973937,
+          "stop" : 1617091973938,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "fe59706f8aaa5971",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/347//#testresult/fe59706f8aaa5971",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617089917544,
+          "stop" : 1617089917545,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "5c62b3826f5d97ce",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/345//#testresult/5c62b3826f5d97ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617088725624,
+          "stop" : 1617088725625,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "a0f722a1a63041e7",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/344//#testresult/a0f722a1a63041e7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617087959649,
+          "stop" : 1617087959649,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "4f94fa9be4a78115",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/343//#testresult/4f94fa9be4a78115",
+        "status" : "passed",
+        "time" : {
+          "start" : 1617087287554,
+          "stop" : 1617087287556,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "bd56de59a1406d7a.json",
+  "parameterValues" : [ ]
+}
