@@ -1,0 +1,47 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Cannot invoke \"com.shaft.api.RequestBuilder$AuthenticationType.ordinal()\" because \"this.authenticationType\" is null",
+      "children" : [ {
+        "name" : "getPostsAndAssertBodyForSpecificTitle",
+        "uid" : "16d631fb50292aa",
+        "parentUid" : "1e060515f2e32a00dcb5a59430344cab",
+        "status" : "broken",
+        "time" : {
+          "start" : 1619227910258,
+          "stop" : 1619227910468,
+          "duration" : 210
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1e060515f2e32a00dcb5a59430344cab"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "API Action [performRequest] failed. With the following test data [Request Type: \"GET\" | Target Status Code: \"200\" | Service URL: \"https://jsonplaceholder.typicode.com/users\" | Content Type: \"*/*\" | Response Time: \"768ms\"].",
+      "children" : [ {
+        "name" : "validateUserEmail",
+        "uid" : "f1a5a00ae5a30680",
+        "parentUid" : "c4a93a7745fe888b928bd1bd3ad80437",
+        "status" : "failed",
+        "time" : {
+          "start" : 1619227910469,
+          "stop" : 1619227911587,
+          "duration" : 1118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c4a93a7745fe888b928bd1bd3ad80437"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
