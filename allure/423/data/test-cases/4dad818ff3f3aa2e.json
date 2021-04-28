@@ -1,0 +1,363 @@
+{
+  "uid" : "4dad818ff3f3aa2e",
+  "name" : "assertElementAttribute_false_literalComparison_expectedToFail",
+  "fullName" : "unitTests.tests_validations_assertions.assertElementAttribute_false_literalComparison_expectedToFail",
+  "historyId" : "1d2f699b44814327bb7ff247318e9c4e",
+  "time" : {
+    "start" : 1619642182074,
+    "stop" : 1619642182077,
+    "duration" : 3
+  },
+  "status" : "skipped",
+  "statusMessage" : "Unhandled Exception with Driver Type [GoogleChrome].",
+  "statusTrace" : "java.lang.AssertionError: Unhandled Exception with Driver Type [GoogleChrome].\n\tat org.testng.Assert.fail(Assert.java:87)\n\tat com.shaft.driver.DriverFactoryHelper.getDriver(DriverFactoryHelper.java:789)\n\tat com.shaft.driver.DriverFactoryHelper.getDriver(DriverFactoryHelper.java:140)\n\tat com.shaft.gui.browser.BrowserFactory.getBrowser(BrowserFactory.java:20)\n\tat unitTests.tests_validations_assertions.beforeMethod(tests_validations_assertions.java:406)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)\n\tat org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)\n\tat org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)\n\tat org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\n\tat org.testng.TestNG.run(TestNG.java:1031)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)\n\tat org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)\nCaused by: java.lang.NullPointerException: null value in entry: desiredCapabilities=null\n\tat com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)\n\tat com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)\n\tat com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)\n\tat com.google.common.collect.ImmutableMap.of(ImmutableMap.java:119)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:211)\n\tat org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)\n\tat com.shaft.driver.DriverFactoryHelper.createNewRemoteDriverInstance(DriverFactoryHelper.java:605)\n\tat com.shaft.driver.DriverFactoryHelper.getDriver(DriverFactoryHelper.java:771)\n\t... 40 more\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeMethod",
+    "time" : {
+      "start" : 1619642182071,
+      "stop" : 1619642182071,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "skipped",
+    "statusMessage" : "Unhandled Exception with Driver Type [GoogleChrome].",
+    "statusTrace" : "java.lang.AssertionError: Unhandled Exception with Driver Type [GoogleChrome].\n\tat org.testng.Assert.fail(Assert.java:87)\n\tat com.shaft.driver.DriverFactoryHelper.getDriver(DriverFactoryHelper.java:789)\n\tat com.shaft.driver.DriverFactoryHelper.getDriver(DriverFactoryHelper.java:140)\n\tat com.shaft.gui.browser.BrowserFactory.getBrowser(BrowserFactory.java:20)\n\tat unitTests.tests_validations_assertions.beforeMethod(tests_validations_assertions.java:406)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)\n\tat org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)\n\tat org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)\n\tat org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\n\tat org.testng.TestNG.run(TestNG.java:1031)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)\n\tat org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)\nCaused by: java.lang.NullPointerException: null value in entry: desiredCapabilities=null\n\tat com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)\n\tat com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)\n\tat com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)\n\tat com.google.common.collect.ImmutableMap.of(ImmutableMap.java:119)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:211)\n\tat org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)\n\tat com.shaft.driver.DriverFactoryHelper.createNewRemoteDriverInstance(DriverFactoryHelper.java:605)\n\tat com.shaft.driver.DriverFactoryHelper.getDriver(DriverFactoryHelper.java:771)\n\t... 40 more\n",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "41b7e33e6fb319a2",
+      "name" : "Attachment: SHAFT Engine Logs - Current Method log: assertElementAttribute_false_literalComparison_expectedToFail",
+      "source" : "41b7e33e6fb319a2.txt",
+      "type" : "text/plain",
+      "size" : 474
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1619642182078,
+      "stop" : 1619642182078,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "broken",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "closureActivities",
+    "time" : {
+      "start" : 1619642185174,
+      "stop" : 1619642185404,
+      "duration" : 230
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Action [96]: Issue Summary: Total Issues = 5, New issues for Failed Tests = 3, Open issues for Passed Tests = 2, Open issues for Failed Tests = 0. Kindly check the attached Issue details.",
+      "time" : {
+        "start" : 1619642185182,
+        "stop" : 1619642185185,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a60ca940925630f",
+        "name" : "Attachment: SHAFT Engine Logs - Issues log CSV: 20210428-203625",
+        "source" : "a60ca940925630f.csv",
+        "type" : "text/csv",
+        "size" : 613
+      } ],
+      "parameters" : [ {
+        "name" : "actionCounter",
+        "value" : "96"
+      }, {
+        "name" : "logText",
+        "value" : "Issue Summary: Total Issues = 5, New issues for Failed Tests = 3, Open issues for Passed Tests = 2, Open issues for Failed Tests = 0. Kindly check the attached Issue details."
+      }, {
+        "name" : "attachments",
+        "value" : "[[SHAFT Engine Logs, Issues log CSV: 20210428-203625, java.io.ByteArrayInputStream@6b7a96e1]]"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "86fb27bd8b5dd9f",
+      "name" : "Attachment: SHAFT Engine Logs - Execution log: 20210428-203625",
+      "source" : "86fb27bd8b5dd9f.txt",
+      "type" : "text/plain",
+      "size" : 96133
+    }, {
+      "uid" : "fca0978644c09f6e",
+      "name" : "Attachment: HTML - Extent Emailable Execution Report",
+      "source" : "fca0978644c09f6e.html",
+      "type" : "text/html",
+      "size" : 851849
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "unitTests.tests_validations_assertions"
+  }, {
+    "name" : "testClass",
+    "value" : "unitTests.tests_validations_assertions"
+  }, {
+    "name" : "testMethod",
+    "value" : "assertElementAttribute_false_literalComparison_expectedToFail"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SHAFT: Custom Suite"
+  }, {
+    "name" : "suite",
+    "value" : "SHAFT: Custom Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "unitTests.tests_validations_assertions"
+  }, {
+    "name" : "host",
+    "value" : "fv-az201-958"
+  }, {
+    "name" : "thread",
+    "value" : "3883@fv-az201-958.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 1,
+        "passed" : 26,
+        "unknown" : 0,
+        "total" : 27
+      },
+      "items" : [ {
+        "uid" : "889aa4114fdc66b5",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/421//#testresult/889aa4114fdc66b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619611926503,
+          "stop" : 1619611927814,
+          "duration" : 1311
+        }
+      }, {
+        "uid" : "49c08996f2178af1",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/419//#testresult/49c08996f2178af1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619611072119,
+          "stop" : 1619611073635,
+          "duration" : 1516
+        }
+      }, {
+        "uid" : "a516568114a20459",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/418//#testresult/a516568114a20459",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619573446174,
+          "stop" : 1619573447720,
+          "duration" : 1546
+        }
+      }, {
+        "uid" : "5dcad345224f4a05",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/417//#testresult/5dcad345224f4a05",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619522833015,
+          "stop" : 1619522834681,
+          "duration" : 1666
+        }
+      }, {
+        "uid" : "744841372413710a",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/416//#testresult/744841372413710a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619519441378,
+          "stop" : 1619519442951,
+          "duration" : 1573
+        }
+      }, {
+        "uid" : "87dd3ce25c444066",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/415//#testresult/87dd3ce25c444066",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619519066716,
+          "stop" : 1619519068596,
+          "duration" : 1880
+        }
+      }, {
+        "uid" : "63289682b8b03864",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/414//#testresult/63289682b8b03864",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619514474538,
+          "stop" : 1619514475943,
+          "duration" : 1405
+        }
+      }, {
+        "uid" : "a474ee551f9cafff",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/413//#testresult/a474ee551f9cafff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619513823115,
+          "stop" : 1619513824794,
+          "duration" : 1679
+        }
+      }, {
+        "uid" : "904bfa059a04177",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/412//#testresult/904bfa059a04177",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619486955370,
+          "stop" : 1619486956936,
+          "duration" : 1566
+        }
+      }, {
+        "uid" : "7aa158125ed5525f",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/411//#testresult/7aa158125ed5525f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619400688736,
+          "stop" : 1619400690205,
+          "duration" : 1469
+        }
+      }, {
+        "uid" : "1aaa1cd13d252f7",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/410//#testresult/1aaa1cd13d252f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619314314772,
+          "stop" : 1619314316444,
+          "duration" : 1672
+        }
+      }, {
+        "uid" : "8110ba4a042dfc76",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/409//#testresult/8110ba4a042dfc76",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619286181630,
+          "stop" : 1619286183311,
+          "duration" : 1681
+        }
+      }, {
+        "uid" : "bd1843a01321b90b",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/408//#testresult/bd1843a01321b90b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619285962591,
+          "stop" : 1619285963912,
+          "duration" : 1321
+        }
+      }, {
+        "uid" : "17caf5f13ab54ce0",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/404//#testresult/17caf5f13ab54ce0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619275301167,
+          "stop" : 1619275302458,
+          "duration" : 1291
+        }
+      }, {
+        "uid" : "70c7f6473933168",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/402//#testresult/70c7f6473933168",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619227780946,
+          "stop" : 1619227782552,
+          "duration" : 1606
+        }
+      }, {
+        "uid" : "6a59fdc0e1b8a13c",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/400//#testresult/6a59fdc0e1b8a13c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619141482769,
+          "stop" : 1619141485025,
+          "duration" : 2256
+        }
+      }, {
+        "uid" : "fd4b792b778a6da8",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/399//#testresult/fd4b792b778a6da8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1619054875606,
+          "stop" : 1619054877272,
+          "duration" : 1666
+        }
+      }, {
+        "uid" : "d9466c0364702bb9",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/398//#testresult/d9466c0364702bb9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1618968460463,
+          "stop" : 1618968462285,
+          "duration" : 1822
+        }
+      }, {
+        "uid" : "1ff24d1843ebcc54",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/396//#testresult/1ff24d1843ebcc54",
+        "status" : "passed",
+        "time" : {
+          "start" : 1618882046678,
+          "stop" : 1618882048374,
+          "duration" : 1696
+        }
+      }, {
+        "uid" : "70c6be9eae5e5443",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/395//#testresult/70c6be9eae5e5443",
+        "status" : "passed",
+        "time" : {
+          "start" : 1618795641155,
+          "stop" : 1618795642461,
+          "duration" : 1306
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "4dad818ff3f3aa2e.json",
+  "parameterValues" : [ ]
+}
