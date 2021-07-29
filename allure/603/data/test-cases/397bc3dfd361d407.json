@@ -1,0 +1,608 @@
+{
+  "uid" : "397bc3dfd361d407",
+  "name" : "TC001 - Navigate to URL and Verify Google Logo is Displayed",
+  "fullName" : "testPackage01.Test_google_playwright.navigateToURLandVerifyGoogleLogoIsDisplayed",
+  "historyId" : "2b4beb423f2d0918a09c19ca2ce5f015",
+  "time" : {
+    "start" : 1627523878579,
+    "stop" : 1627523885645,
+    "duration" : 7066
+  },
+  "status" : "failed",
+  "statusMessage" : "Element Action [GetMatchingElementsCount] failed.",
+  "statusTrace" : "java.lang.AssertionError: Element Action [GetMatchingElementsCount] failed.\n\tat org.testng.Assert.fail(Assert.java:87)\n\tat com.shaft.gui.element.PlayWrightElementActions.failAction(PlayWrightElementActions.java:687)\n\tat com.shaft.gui.element.PlayWrightElementActions.failAction(PlayWrightElementActions.java:679)\n\tat com.shaft.gui.element.PlayWrightElementActions.getMatchingElementsCount(PlayWrightElementActions.java:705)\n\tat com.shaft.gui.element.PlayWrightElementActions.getElementsCount(PlayWrightElementActions.java:263)\n\tat com.shaft.validation.ValidationHelper.validateElementExists(ValidationHelper.java:102)\n\tat com.shaft.validation.Assertions.assertElementExists(Assertions.java:234)\n\tat poms.GoogleSearch.assertPageIsOpen(GoogleSearch.java:83)\n\tat testPackage01.Test_google_playwright.navigateToURLandVerifyGoogleLogoIsDisplayed(Test_google_playwright.java:24)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\n\tat org.testng.TestNG.run(TestNG.java:1031)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)\n\tat org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)\nCaused by: com.microsoft.playwright.TimeoutError: Error {\n  message='Timeout 5000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"xpath=//img[@id='hplogo' or @alt='Google']\"\n============================================================\n  name='TimeoutError\n  stack='TimeoutError: Timeout 5000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"xpath=//img[@id='hplogo' or @alt='Google']\"\n============================================================\n    at ProgressController.run (/tmp/playwright-java-15354628800941573333/package/lib/server/progress.js:84:26)\n    at Frame.waitForSelector (/tmp/playwright-java-15354628800941573333/package/lib/server/frames.js:736:23)\n    at FrameDispatcher.waitForSelector (/tmp/playwright-java-15354628800941573333/package/lib/dispatchers/frameDispatcher.js:103:110)\n    at DispatcherConnection.dispatch (/tmp/playwright-java-15354628800941573333/package/lib/dispatchers/dispatcher.js:330:46)\n}\n\tat com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)\n\tat com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:94)\n\tat com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:102)\n\tat com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:85)\n\tat com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:929)\n\tat com.microsoft.playwright.impl.PageImpl.lambda$waitForSelector$78(PageImpl.java:1366)\n\tat com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)\n\tat com.microsoft.playwright.impl.PageImpl.waitForSelector(PageImpl.java:1365)\n\tat com.shaft.gui.element.PlayWrightElementActions.getMatchingElementsCount(PlayWrightElementActions.java:701)\n\t... 38 more\nCaused by: com.microsoft.playwright.TimeoutError: Error {\n  message='Timeout 5000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"xpath=//img[@id='hplogo' or @alt='Google']\"\n============================================================\n  name='TimeoutError\n  stack='TimeoutError: Timeout 5000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"xpath=//img[@id='hplogo' or @alt='Google']\"\n============================================================\n    at ProgressController.run (/tmp/playwright-java-15354628800941573333/package/lib/server/progress.js:84:26)\n    at Frame.waitForSelector (/tmp/playwright-java-15354628800941573333/package/lib/server/frames.js:736:23)\n    at FrameDispatcher.waitForSelector (/tmp/playwright-java-15354628800941573333/package/lib/dispatchers/frameDispatcher.js:103:110)\n    at DispatcherConnection.dispatch (/tmp/playwright-java-15354628800941573333/package/lib/dispatchers/dispatcher.js:330:46)\n}\n\tat com.microsoft.playwright.impl.Connection.dispatch(Connection.java:220)\n\tat com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:202)\n\tat com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:92)\n\t... 45 more\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1627523865522,
+      "stop" : 1627523878574,
+      "duration" : 13052
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Successfully loaded the following test data file [src/test/resources/TestDataFiles/testSuite01/TestData.xlsx].",
+      "time" : {
+        "start" : 1627523865551,
+        "stop" : 1627523865551,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "916af6d59da2df08",
+        "name" : "Attachment: Test Data - Excel",
+        "source" : "916af6d59da2df08.xlsx",
+        "type" : "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "size" : 12483
+      } ],
+      "parameters" : [ {
+        "name" : "actionCounter",
+        "value" : "438"
+      }, {
+        "name" : "logText",
+        "value" : "Successfully loaded the following test data file [src/test/resources/TestDataFiles/testSuite01/TestData.xlsx]."
+      }, {
+        "name" : "attachments",
+        "value" : "[[Test Data, Excel, java.io.FileInputStream@30424294]]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Attempting to run using Playwright locally on: [Linux-64], [GoogleChrome], Headless Execution.",
+      "time" : {
+        "start" : 1627523878306,
+        "stop" : 1627523878306,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actionCounter",
+        "value" : "439"
+      }, {
+        "name" : "logText",
+        "value" : "Attempting to run using Playwright locally on: [Linux-64], [GoogleChrome], Headless Execution."
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Browser Action [MaximizeWindow] successfully performed. With the following test data [New screen size is now: (1920, 1080)].",
+      "time" : {
+        "start" : 1627523878574,
+        "stop" : 1627523878574,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actionCounter",
+        "value" : "440"
+      }, {
+        "name" : "logText",
+        "value" : "Browser Action [MaximizeWindow] successfully performed. With the following test data [New screen size is now: (1920, 1080)]."
+      }, {
+        "name" : "attachments",
+        "value" : "[null]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Element Action [GetMatchingElementsCount] failed.",
+    "statusTrace" : "java.lang.AssertionError: Element Action [GetMatchingElementsCount] failed.\n\tat org.testng.Assert.fail(Assert.java:87)\n\tat com.shaft.gui.element.PlayWrightElementActions.failAction(PlayWrightElementActions.java:687)\n\tat com.shaft.gui.element.PlayWrightElementActions.failAction(PlayWrightElementActions.java:679)\n\tat com.shaft.gui.element.PlayWrightElementActions.getMatchingElementsCount(PlayWrightElementActions.java:705)\n\tat com.shaft.gui.element.PlayWrightElementActions.getElementsCount(PlayWrightElementActions.java:263)\n\tat com.shaft.validation.ValidationHelper.validateElementExists(ValidationHelper.java:102)\n\tat com.shaft.validation.Assertions.assertElementExists(Assertions.java:234)\n\tat poms.GoogleSearch.assertPageIsOpen(GoogleSearch.java:83)\n\tat testPackage01.Test_google_playwright.navigateToURLandVerifyGoogleLogoIsDisplayed(Test_google_playwright.java:24)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\n\tat org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)\n\tat org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)\n\tat org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\n\tat org.testng.TestRunner.privateRun(TestRunner.java:794)\n\tat org.testng.TestRunner.run(TestRunner.java:596)\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:377)\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:276)\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1134)\n\tat org.testng.TestNG.runSuites(TestNG.java:1063)\n\tat org.testng.TestNG.run(TestNG.java:1031)\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)\n\tat org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)\nCaused by: com.microsoft.playwright.TimeoutError: Error {\n  message='Timeout 5000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"xpath=//img[@id='hplogo' or @alt='Google']\"\n============================================================\n  name='TimeoutError\n  stack='TimeoutError: Timeout 5000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"xpath=//img[@id='hplogo' or @alt='Google']\"\n============================================================\n    at ProgressController.run (/tmp/playwright-java-15354628800941573333/package/lib/server/progress.js:84:26)\n    at Frame.waitForSelector (/tmp/playwright-java-15354628800941573333/package/lib/server/frames.js:736:23)\n    at FrameDispatcher.waitForSelector (/tmp/playwright-java-15354628800941573333/package/lib/dispatchers/frameDispatcher.js:103:110)\n    at DispatcherConnection.dispatch (/tmp/playwright-java-15354628800941573333/package/lib/dispatchers/dispatcher.js:330:46)\n}\n\tat com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)\n\tat com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:94)\n\tat com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:102)\n\tat com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:85)\n\tat com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:929)\n\tat com.microsoft.playwright.impl.PageImpl.lambda$waitForSelector$78(PageImpl.java:1366)\n\tat com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)\n\tat com.microsoft.playwright.impl.PageImpl.waitForSelector(PageImpl.java:1365)\n\tat com.shaft.gui.element.PlayWrightElementActions.getMatchingElementsCount(PlayWrightElementActions.java:701)\n\t... 38 more\nCaused by: com.microsoft.playwright.TimeoutError: Error {\n  message='Timeout 5000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"xpath=//img[@id='hplogo' or @alt='Google']\"\n============================================================\n  name='TimeoutError\n  stack='TimeoutError: Timeout 5000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"xpath=//img[@id='hplogo' or @alt='Google']\"\n============================================================\n    at ProgressController.run (/tmp/playwright-java-15354628800941573333/package/lib/server/progress.js:84:26)\n    at Frame.waitForSelector (/tmp/playwright-java-15354628800941573333/package/lib/server/frames.js:736:23)\n    at FrameDispatcher.waitForSelector (/tmp/playwright-java-15354628800941573333/package/lib/dispatchers/frameDispatcher.js:103:110)\n    at DispatcherConnection.dispatch (/tmp/playwright-java-15354628800941573333/package/lib/dispatchers/dispatcher.js:330:46)\n}\n\tat com.microsoft.playwright.impl.Connection.dispatch(Connection.java:220)\n\tat com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:202)\n\tat com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:92)\n\t... 45 more\n",
+    "steps" : [ {
+      "name" : "Browser Action [NavigateToURL] successfully performed. With the following test data [https://www.google.com/ncr].",
+      "time" : {
+        "start" : 1627523880639,
+        "stop" : 1627523880639,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actionCounter",
+        "value" : "441"
+      }, {
+        "name" : "logText",
+        "value" : "Browser Action [NavigateToURL] successfully performed. With the following test data [https://www.google.com/ncr]."
+      }, {
+        "name" : "attachments",
+        "value" : "[null]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Element Action [GetMatchingElementsCount] failed.",
+      "time" : {
+        "start" : 1627523885643,
+        "stop" : 1627523885643,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actionCounter",
+        "value" : "442"
+      }, {
+        "name" : "logText",
+        "value" : "Element Action [GetMatchingElementsCount] failed."
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "22187b341b0084f7",
+      "name" : "Attachment: SHAFT Engine Logs - Current Method log: navigateToURLandVerifyGoogleLogoIsDisplayed",
+      "source" : "22187b341b0084f7.txt",
+      "type" : "text/plain",
+      "size" : 996
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "afterClass",
+    "time" : {
+      "start" : 1627523885658,
+      "stop" : 1627523885708,
+      "duration" : 50
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Successfully Closed PlayWright Driver.",
+      "time" : {
+        "start" : 1627523885708,
+        "stop" : 1627523885708,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actionCounter",
+        "value" : "443"
+      }, {
+        "name" : "logText",
+        "value" : "Successfully Closed PlayWright Driver."
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "closureActivities",
+    "time" : {
+      "start" : 1627523987693,
+      "stop" : 1627523988964,
+      "duration" : 1271
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Successfully Closed All Drivers.",
+      "time" : {
+        "start" : 1627523988438,
+        "stop" : 1627523988439,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actionCounter",
+        "value" : "512"
+      }, {
+        "name" : "logText",
+        "value" : "Successfully Closed All Drivers."
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Issue Summary: Total Issues = 13, New issues for Failed Tests = 11, Open issues for Passed Tests = 2, Open issues for Failed Tests = 0. Kindly check the attached Issue details.",
+      "time" : {
+        "start" : 1627523988446,
+        "stop" : 1627523988447,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f95aa1156b051892",
+        "name" : "Attachment: SHAFT Engine Logs - Issues log CSV: 20210729-015948",
+        "source" : "f95aa1156b051892.csv",
+        "type" : "text/csv",
+        "size" : 1782
+      } ],
+      "parameters" : [ {
+        "name" : "actionCounter",
+        "value" : "513"
+      }, {
+        "name" : "logText",
+        "value" : "Issue Summary: Total Issues = 13, New issues for Failed Tests = 11, Open issues for Passed Tests = 2, Open issues for Failed Tests = 0. Kindly check the attached Issue details."
+      }, {
+        "name" : "attachments",
+        "value" : "[[SHAFT Engine Logs, Issues log CSV: 20210729-015948, java.io.ByteArrayInputStream@7fba7e4b]]"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "8e24293ed619259d",
+      "name" : "Attachment: Selenium WebDriver Logs - server",
+      "source" : "8e24293ed619259d.txt",
+      "type" : "text/plain",
+      "size" : 1288
+    }, {
+      "uid" : "e316ee479c2e2e90",
+      "name" : "Attachment: Selenium WebDriver Logs - performance",
+      "source" : "e316ee479c2e2e90.txt",
+      "type" : "text/plain",
+      "size" : 7444
+    }, {
+      "uid" : "96c920ade298827b",
+      "name" : "Attachment: Selenium WebDriver Logs - browser",
+      "source" : "96c920ade298827b.txt",
+      "type" : "text/plain",
+      "size" : 236
+    }, {
+      "uid" : "35784a2d186d66db",
+      "name" : "Attachment: Selenium WebDriver Logs - driver",
+      "source" : "35784a2d186d66db.txt",
+      "type" : "text/plain",
+      "size" : 148370
+    }, {
+      "uid" : "440551981eb69761",
+      "name" : "Attachment: Selenium WebDriver Logs - server",
+      "source" : "440551981eb69761.txt",
+      "type" : "text/plain",
+      "size" : 1288
+    }, {
+      "uid" : "5d28a8231253e5e",
+      "name" : "Attachment: Selenium WebDriver Logs - performance",
+      "source" : "5d28a8231253e5e.txt",
+      "type" : "text/plain",
+      "size" : 7281
+    }, {
+      "uid" : "86b05b027cc606dc",
+      "name" : "Attachment: Selenium WebDriver Logs - browser",
+      "source" : "86b05b027cc606dc.txt",
+      "type" : "text/plain",
+      "size" : 210
+    }, {
+      "uid" : "b6bda3f4f66f856e",
+      "name" : "Attachment: Selenium WebDriver Logs - driver",
+      "source" : "b6bda3f4f66f856e.txt",
+      "type" : "text/plain",
+      "size" : 148741
+    }, {
+      "uid" : "d877a1d72f3e07a1",
+      "name" : "Attachment: Selenium WebDriver Logs - server",
+      "source" : "d877a1d72f3e07a1.txt",
+      "type" : "text/plain",
+      "size" : 1288
+    }, {
+      "uid" : "8412103ea16510a",
+      "name" : "Attachment: Selenium WebDriver Logs - performance",
+      "source" : "8412103ea16510a.txt",
+      "type" : "text/plain",
+      "size" : 780457
+    }, {
+      "uid" : "680c8eff1b5470c4",
+      "name" : "Attachment: Selenium WebDriver Logs - browser",
+      "source" : "680c8eff1b5470c4.txt",
+      "type" : "text/plain",
+      "size" : 460
+    }, {
+      "uid" : "4ed257ec0aa05b29",
+      "name" : "Attachment: Selenium WebDriver Logs - driver",
+      "source" : "4ed257ec0aa05b29.txt",
+      "type" : "text/plain",
+      "size" : 838048
+    }, {
+      "uid" : "430d807177c0d95b",
+      "name" : "Attachment: SHAFT Engine Logs - Execution log: 20210729-015948",
+      "source" : "430d807177c0d95b.txt",
+      "type" : "text/plain",
+      "size" : 251858
+    }, {
+      "uid" : "22d49d149ad2213b",
+      "name" : "Attachment: HTML - Extent Emailable Execution Report",
+      "source" : "22d49d149ad2213b.html",
+      "type" : "text/html",
+      "size" : 6825915
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 15,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "testPackage01.Test_google_playwright"
+  }, {
+    "name" : "testClass",
+    "value" : "testPackage01.Test_google_playwright"
+  }, {
+    "name" : "testMethod",
+    "value" : "navigateToURLandVerifyGoogleLogoIsDisplayed"
+  }, {
+    "name" : "parentSuite",
+    "value" : "SHAFT: Custom Suite"
+  }, {
+    "name" : "suite",
+    "value" : "SHAFT: Custom Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "testPackage01.Test_google_playwright"
+  }, {
+    "name" : "host",
+    "value" : "fv-az213-415"
+  }, {
+    "name" : "thread",
+    "value" : "4233@fv-az213-415.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 9,
+        "broken" : 0,
+        "skipped" : 1,
+        "passed" : 94,
+        "unknown" : 0,
+        "total" : 104
+      },
+      "items" : [ {
+        "uid" : "6f67134b8de366ea",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/602//#testresult/6f67134b8de366ea",
+        "status" : "failed",
+        "statusDetails" : "Element Action [GetMatchingElementsCount] failed.",
+        "time" : {
+          "start" : 1627437640152,
+          "stop" : 1627437647623,
+          "duration" : 7471
+        }
+      }, {
+        "uid" : "eb0c052da4771be8",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/601//#testresult/eb0c052da4771be8",
+        "status" : "failed",
+        "statusDetails" : "Element Action [GetMatchingElementsCount] failed.",
+        "time" : {
+          "start" : 1627351408728,
+          "stop" : 1627351416488,
+          "duration" : 7760
+        }
+      }, {
+        "uid" : "61987ef2b4d46669",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/600//#testresult/61987ef2b4d46669",
+        "status" : "failed",
+        "statusDetails" : "Element Action [GetMatchingElementsCount] failed.",
+        "time" : {
+          "start" : 1627302944710,
+          "stop" : 1627302951812,
+          "duration" : 7102
+        }
+      }, {
+        "uid" : "1be8a3211b81b4e1",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/598//#testresult/1be8a3211b81b4e1",
+        "status" : "failed",
+        "statusDetails" : "Element Action [GetMatchingElementsCount] failed.",
+        "time" : {
+          "start" : 1627302795498,
+          "stop" : 1627302802595,
+          "duration" : 7097
+        }
+      }, {
+        "uid" : "f4da9d64653ad542",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/597//#testresult/f4da9d64653ad542",
+        "status" : "failed",
+        "statusDetails" : "Element Action [GetMatchingElementsCount] failed.",
+        "time" : {
+          "start" : 1627264777428,
+          "stop" : 1627264784609,
+          "duration" : 7181
+        }
+      }, {
+        "uid" : "c53b1d2d4bb7517",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/596//#testresult/c53b1d2d4bb7517",
+        "status" : "failed",
+        "statusDetails" : "Element Action [GetMatchingElementsCount] failed.",
+        "time" : {
+          "start" : 1627178264503,
+          "stop" : 1627178272162,
+          "duration" : 7659
+        }
+      }, {
+        "uid" : "d5e2202eb4cbcde6",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/595//#testresult/d5e2202eb4cbcde6",
+        "status" : "failed",
+        "statusDetails" : "Element Action [GetMatchingElementsCount] failed.",
+        "time" : {
+          "start" : 1627091787435,
+          "stop" : 1627091794564,
+          "duration" : 7129
+        }
+      }, {
+        "uid" : "8f1c751d46bc3c27",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/594//#testresult/8f1c751d46bc3c27",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627005555940,
+          "stop" : 1627005558544,
+          "duration" : 2604
+        }
+      }, {
+        "uid" : "f4662436f9fc4a0b",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/592//#testresult/f4662436f9fc4a0b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626919297590,
+          "stop" : 1626919299966,
+          "duration" : 2376
+        }
+      }, {
+        "uid" : "db54af78783d03b5",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/590//#testresult/db54af78783d03b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626832812391,
+          "stop" : 1626832814531,
+          "duration" : 2140
+        }
+      }, {
+        "uid" : "8930e55c46c637ec",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/588//#testresult/8930e55c46c637ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626746528187,
+          "stop" : 1626746530063,
+          "duration" : 1876
+        }
+      }, {
+        "uid" : "be781c276f299ce",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/587//#testresult/be781c276f299ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626659854143,
+          "stop" : 1626659856225,
+          "duration" : 2082
+        }
+      }, {
+        "uid" : "89f293b7782d66f0",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/586//#testresult/89f293b7782d66f0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626573391326,
+          "stop" : 1626573393654,
+          "duration" : 2328
+        }
+      }, {
+        "uid" : "accde58bf75d539e",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/585//#testresult/accde58bf75d539e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626486778142,
+          "stop" : 1626486780236,
+          "duration" : 2094
+        }
+      }, {
+        "uid" : "a6b9cf3241a646b6",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/584//#testresult/a6b9cf3241a646b6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626400738260,
+          "stop" : 1626400740322,
+          "duration" : 2062
+        }
+      }, {
+        "uid" : "a4f08bd4706f4a74",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/583//#testresult/a4f08bd4706f4a74",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626314243842,
+          "stop" : 1626314246057,
+          "duration" : 2215
+        }
+      }, {
+        "uid" : "73951a5e3874985",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/582//#testresult/73951a5e3874985",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626227499538,
+          "stop" : 1626227501507,
+          "duration" : 1969
+        }
+      }, {
+        "uid" : "62c726ce434a112",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/581//#testresult/62c726ce434a112",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626141502787,
+          "stop" : 1626141505067,
+          "duration" : 2280
+        }
+      }, {
+        "uid" : "3b7d7d214ef75e",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/580//#testresult/3b7d7d214ef75e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1626054867401,
+          "stop" : 1626054869574,
+          "duration" : 2173
+        }
+      }, {
+        "uid" : "e54eabb75055edf3",
+        "reportUrl" : "https://MohabMohie.github.io/SHAFT_ENGINE/allure/579//#testresult/e54eabb75055edf3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1625968755413,
+          "stop" : 1625968757464,
+          "duration" : 2051
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "397bc3dfd361d407.json",
+  "parameterValues" : [ ]
+}
