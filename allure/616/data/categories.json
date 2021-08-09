@@ -1,0 +1,116 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Assertion [ValidateElementExists] FAILED. Expected [Element Should Exist, locator 'By.xpath: //img[@id='hplogo' or @alt='Google']'] and Actual [Element Doesn't Exists]. Comparison Type [EQUALS]. Validation Type [POSITIVE].",
+      "children" : [ {
+        "name" : "assertElementExists_true_expectedToPass",
+        "uid" : "c4d1b988dad81c3c",
+        "parentUid" : "272b8a06c320b50811cd01b2037490c8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628473895224,
+          "stop" : 1628473925837,
+          "duration" : 30613
+        },
+        "flaky" : true,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC001 - Navigate to URL and Verify Google Logo is Displayed",
+        "uid" : "c4197ef4fe038d20",
+        "parentUid" : "272b8a06c320b50811cd01b2037490c8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628473998529,
+          "stop" : 1628474030041,
+          "duration" : 31512
+        },
+        "flaky" : true,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "272b8a06c320b50811cd01b2037490c8"
+    }, {
+      "name" : "Element Action [WaitForElementToBePresent] failed. With the following test data [waited for the element's state of presence to be (true). Element locator (By.xpath: //img[@id='hplogo' or @alt='Google'])].",
+      "children" : [ {
+        "name" : "waitForElementToBePresent_true_expectedToPass",
+        "uid" : "8c7da3bdcd1fd7b1",
+        "parentUid" : "7adedce0cd7687802222af5653bfb688",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628473950059,
+          "stop" : 1628473956064,
+          "duration" : 6005
+        },
+        "flaky" : true,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7adedce0cd7687802222af5653bfb688"
+    }, {
+      "name" : "Element Action [GetMatchingElementsCount] failed.",
+      "children" : [ {
+        "name" : "TC001 - Navigate to URL and Verify Google Logo is Displayed",
+        "uid" : "ed5eb11ec242ca6c",
+        "parentUid" : "bc0b2dfa71a8df7ae54e36552a021066",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628474160639,
+          "stop" : 1628474167684,
+          "duration" : 7045
+        },
+        "flaky" : true,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "chainElementActions",
+        "uid" : "16d72a61d592528e",
+        "parentUid" : "bc0b2dfa71a8df7ae54e36552a021066",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628474222425,
+          "stop" : 1628474224954,
+          "duration" : 2529
+        },
+        "flaky" : true,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bc0b2dfa71a8df7ae54e36552a021066"
+    }, {
+      "name" : "Element Action [IdentifyUniqueElement] failed. With the following test data [zero elements found matching this locator \"By.tagName: select\".].",
+      "children" : [ {
+        "name" : "multipleSelect",
+        "uid" : "fea3a647e32cd98d",
+        "parentUid" : "162d560a7803b3bef21b6bf9439d6851",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628474170193,
+          "stop" : 1628474196393,
+          "duration" : 26200
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "simpleSelect",
+        "uid" : "cec30e4fdb1b0ade",
+        "parentUid" : "162d560a7803b3bef21b6bf9439d6851",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628474196397,
+          "stop" : 1628474222366,
+          "duration" : 25969
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "162d560a7803b3bef21b6bf9439d6851"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
