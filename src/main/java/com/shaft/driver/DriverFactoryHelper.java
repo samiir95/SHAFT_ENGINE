@@ -76,7 +76,7 @@ public class DriverFactoryHelper {
     private static String customDriverName;
     private static String targetOperatingSystem;
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-
+    private static String desktopDriverName;
     // logging preferences object
     private static LoggingPreferences logPrefs;
 
@@ -87,6 +87,8 @@ public class DriverFactoryHelper {
     private static EdgeOptions edOptions;
     private static InternetExplorerOptions ieOptions;
     private static DesiredCapabilities appiumCapabilities;
+
+    public static final String DESKTOP_DRIVER_NAME = "desktop_driverName";
 
     // kill-switch
     private static boolean killSwitch = false;
@@ -129,6 +131,20 @@ public class DriverFactoryHelper {
      */
     public static boolean isMobileNativeExecution() {
         return isMobileExecution() && (TARGET_MOBILE_BROWSER_NAME == null || "".equals(TARGET_MOBILE_BROWSER_NAME));
+    }
+
+    /**
+     *
+     * Checks to see if the execution is a Desktop execution
+     *
+     * @return true if it's a Desktop execution
+     */
+    public static boolean isDesktopExecution() {
+        if("Desktop".equalsIgnoreCase(System.getProperty(DESKTOP_DRIVER_NAME))){
+            desktopDriverName = System.getProperty(DESKTOP_DRIVER_NAME);
+            return true;
+        };
+        return false;
     }
 
     /**
@@ -343,7 +359,7 @@ public class DriverFactoryHelper {
         switch (operatingSystem) {
             case WINDOWS:
                 if (driverType.equals(DriverType.DESKTOP_FIREFOX) || driverType.equals(DriverType.DESKTOP_CHROME)
-                        || driverType.equals(DriverType.DESKTOP_INTERNET_EXPLORER) || driverType.equals(DriverType.DESKTOP_EDGE)) {
+                        || driverType.equals(DriverType.DESKTOP_INTERNET_EXPLORER) || driverType.equals(DriverType.DESKTOP_EDGE)|| driverType.equals(DriverType.APPIUM_DESKTOP)) {
                     isCompatibleDriver = true;
                 }
                 break;
@@ -511,7 +527,13 @@ public class DriverFactoryHelper {
                     sfOptions.setImplicitWaitTimeout(Duration.ofSeconds(IMPLICIT_WAIT_TIMEOUT));
                 }
             }
-            case APPIUM_MOBILE_NATIVE -> appiumCapabilities = new DesiredCapabilities(customDriverOptions);
+            case APPIUM_MOBILE_NATIVE  -> {
+                appiumCapabilities = new DesiredCapabilities(customDriverOptions);
+            }
+            case APPIUM_DESKTOP  -> {
+                appiumCapabilities = new DesiredCapabilities(customDriverOptions);
+                appiumCapabilities.setCapability(CapabilityType.PLATFORM_NAME, getDesiredOperatingSystem());
+            }
             default -> failAction("Unsupported Driver Type [" + driverName + "].");
         }
     }
@@ -607,7 +629,8 @@ public class DriverFactoryHelper {
 
         if (isMobileNativeExecution()) {
             driverType = DriverType.APPIUM_MOBILE_NATIVE;
-        } else {
+        }
+        else {
             driverType = getDriverTypeFromName(driverName);
         }
         var initialLog = new StringBuilder();
@@ -625,7 +648,7 @@ public class DriverFactoryHelper {
         ReportManager.log(initialLog + ".");
 
 
-        if (isMobileExecution()) {
+        if (isMobileExecution() || isDesktopExecution()) {
             if (appiumCapabilities == null) {
                 appiumCapabilities = setAppiumDesiredCapabilitiesList();
             }else{
@@ -701,6 +724,9 @@ private static void setValueToRemoteDriverInstance(String driverName, DriverType
              // will break in case of firefoxOS
          }
          break;
+     case APPIUM_DESKTOP:
+             driver.set(new AppiumDriver(new URL(TARGET_HUB_URL), mobileDesiredCapabilities));
+             break;
      default:
          failAction("Unsupported Driver Type [" + driverName + "].");
          break;
@@ -762,12 +788,17 @@ private static void setValueToRemoteDriverInstance(String driverName, DriverType
     }
 
     private static DesiredCapabilities setAppiumDesiredCapabilitiesList() {
-    	var desiredCapabilities = new DesiredCapabilities();
+        var desiredCapabilities = new DesiredCapabilities();
+        String beginWith="mobile";
+        if(isDesktopExecution()){
+            beginWith = "desktop";
+        }
 
-        Map<String, String> caps = PropertyFileManager.getAppiumDesiredCapabilities();
+        Map<String, String> caps = PropertyFileManager.getAppiumDesiredCapabilities(beginWith);
+        String finalBeginWith = beginWith;
         caps.forEach((capabilityName, value) -> {
             if (!value.trim().equals("")) {
-                desiredCapabilities.setCapability(capabilityName.split("mobile_")[1], value);
+                desiredCapabilities.setCapability(capabilityName.split(finalBeginWith + "_")[1], value);
             }
         });
         return desiredCapabilities;
@@ -793,6 +824,12 @@ private static void setValueToRemoteDriverInstance(String driverName, DriverType
         if (isMobileWebExecution()) {
             internalDriverName = System.getProperty("mobile_browserName");
         }
+
+        //Desktop Version
+        if (isDesktopExecution()) {
+            internalDriverName = desktopDriverName;
+        }
+
         try {
             if (!isMobileNativeExecution()) {
                 checkDriverOSCrossCompatibility(internalDriverName);
@@ -820,7 +857,7 @@ private static void setValueToRemoteDriverInstance(String driverName, DriverType
 
             if (!isMobileNativeExecution()) {
                 JavaScriptWaitManager.setDriver(driver.get());
-                if (Boolean.TRUE.equals(AUTO_MAXIMIZE) && !isMobileWebExecution()
+                if (Boolean.TRUE.equals(AUTO_MAXIMIZE) && !isMobileWebExecution() && !isDesktopExecution()
                         && (!DriverType.DESKTOP_CHROME.equals(getDriverTypeFromName(internalDriverName)) || OperatingSystemType.MACOS.equals(getOperatingSystemFromName(targetOperatingSystem)))) {
                     BrowserActions.maximizeWindow(driver.get());
                 }

@@ -3,6 +3,8 @@ package testPackage01;
 import org.openqa.selenium.WebDriver;
 import org.sikuli.script.App;
 import org.sikuli.script.Key;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.shaft.cli.TerminalActions;
@@ -46,13 +48,13 @@ public class Test_sikulix {
         Assertions.assertEquals("4", result);
     }
 
-    //@BeforeClass
+    @BeforeClass
     public void openApplication() {
         new TerminalActions().performTerminalCommand("calc");
         calculator = DriverFactory.getSikuliApp("Calculator");
     }
 
-    //@AfterClass
+    @AfterClass
     public void closeApplication() {
     	DriverFactory.closeSikuliApp(calculator);
     }

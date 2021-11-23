@@ -82,19 +82,19 @@ public class PropertyFileManager {
         }
     }
 
-    public static synchronized Map<String, String> getAppiumDesiredCapabilities() {
+    public static synchronized Map<String, String> getAppiumDesiredCapabilities(String beginWith) {
         Map<String, String> appiumDesiredCapabilities = new HashMap<>();
 
         Properties props = System.getProperties();
         props.forEach((key, value) -> {
-            if (String.valueOf(key).toLowerCase().contains("mobile_")) {
+            if (String.valueOf(key).toLowerCase().contains(beginWith + "_")) {
                 appiumDesiredCapabilities.put(String.valueOf(key), String.valueOf(value));
             }
         });
-        var app = appiumDesiredCapabilities.get("mobile_app");
+        var app = appiumDesiredCapabilities.get(beginWith + "_app");
         if (app!= null && !app.isEmpty() &&
                 (app.startsWith("src\\") || app.startsWith("src/"))){
-            appiumDesiredCapabilities.put("mobile_app", FileActions.getAbsolutePath(app));
+            appiumDesiredCapabilities.put(beginWith + "_app", FileActions.getAbsolutePath(app));
         }
         return appiumDesiredCapabilities;
     }
