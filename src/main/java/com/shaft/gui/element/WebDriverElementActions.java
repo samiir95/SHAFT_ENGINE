@@ -116,9 +116,11 @@ public class WebDriverElementActions {
                         elementText = readTextBasedOnSuccessfulLocationStrategy(driver, internalElementLocator,
                                 determineSuccessfulTextLocationStrategy(driver, internalElementLocator));
                     }
-                    // adding hover before clicking an element to enable styles to show in the
-                    // execution screenshots and to solve issues clicking on certain elements.
-                    (new Actions(driver)).moveToElement(driver.findElement(elementLocator)).perform();
+                    if(!DriverFactoryHelper.isDesktopExecution()){
+                        // adding hover before clicking an element to enable styles to show in the
+                        // execution screenshots and to solve issues clicking on certain elements.
+                        (new Actions(driver)).moveToElement(driver.findElement(elementLocator)).perform();
+                    }
                 } catch (Exception e) {
                     ReportManagerHelper.logDiscrete(e);
                 }
@@ -1002,7 +1004,7 @@ public class WebDriverElementActions {
     public static void setLastUsedDriver(WebDriver driver) {
         lastUsedDriver = driver;
     }
-    
+
     protected static WebDriver getLastUsedDriver() {
     	return lastUsedDriver;
     }
@@ -1702,7 +1704,7 @@ public class WebDriverElementActions {
             if (newScreenshot != null && !newScreenshot.equals(new ArrayList<>())) {
                 attachments.add(newScreenshot);
             }
-        } 
+        }
 
         if (!attachments.equals(new ArrayList<>())) {
             ReportManagerHelper.log(message, attachments);
